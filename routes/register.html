@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../public/style/styles.css" media="screen"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+    <title>Bolivia resto</title>
+</head>
+<body>
+<nav id="navColor" class="navbar  fixed-top navbar-expand-lg navbar-light ">
+    <div class="general container">
+        <a class="navbar-brand" href="../index.html">
+            <img class="logo hvr-wobble-horizontal" src="../public/imagen/icon1.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item linkNavbar">
+                    <a class="hvr-float-shadow navText nav-link" href="./aboutMe.html">Nosotros</a>
+                </li>
+                <li class="nav-item linkNavbar">
+                    <a class="hvr-float-shadow navText nav-link" href="./contact.html">Contacto</a>
+                </li>
+                <li class="nav-item linkNavbar">
+                    <a class="hvr-float-shadow navText nav-link" href="./branch.html">Sucursales</a>
+                </li>
+                <li class="nav-item linkNavbar">
+                    <a class="hvr-float-shadow navText nav-link" href="./register.html">Registro</a>
+                </li>
+                <li class="nav-item linkNavbar">
+                    <a class="hvr-float-shadow navText nav-link" href="./ourCustomers.html">Clientes felices</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h4 class="text1">Formulario de registro</h4>
+<form class="form" action="show_data.html" target="_blank">
+    <p>Datos personales</p>
+    <div class="rowForm">
+        <div class="onda form-group row">
+            <label for="name" class="formLabel col-sm-4 col-form-label">Nombre</label>
+            <div class="col-sm-8">
+                <input type="text"  class="form-control" id="name"  name="name" placeholder="Ingrese su nombre">
+            </div>
+        </div>
+        <div class="onda form-group row">
+            <label for="lastName" class="formLabel col-sm-4 col-form-label">Apellido</label>
+            <div class="col-sm-8">
+                <input type="text"  class="form-control" id="lastName" name="lastName" placeholder="Ingrese su apellido">
+            </div>
+        </div>
+        <div class="onda form-group row">
+            <label for="birthdate" class="formLabel col-sm-4 col-form-label">F. de nacimiento</label>
+            <div class="col-sm-8">
+                <input type="text"  class="form-control" id="birthdate" name="birthdate" placeholder="DD/MM/AAAA">
+            </div>
+        </div>
+    </div>
+    <p>Dirección</p>
+    <div class="rowForm">
+        <div class="onda form-group row">
+            <label for="street" class="formLabel col-sm-4 col-form-label">Calle</label>
+            <div class="col-sm-8">
+                <input type="text"  class="form-control" id="street" name="address" placeholder="Calle, numero, piso y depto.">
+            </div>
+        </div>
+        <div class="onda form-group row">
+            <label for="city" class="formLabel col-sm-4 col-form-label">Ciudad</label>
+            <div class="col-sm-8">
+                <input type="text"  class="form-control" id="city" name="city" placeholder="Ingrese su ciudad">
+            </div>
+        </div>
+        <div class="onda form-group row">
+            <label for="zipcode" class="formLabel col-sm-4 col-form-label">Codigo postal</label>
+            <div class="col-sm-8">
+                <input type="text"  class="form-control" id="zipcode" name="zipCode" placeholder="Ingrese su codigo postal">
+            </div>
+        </div>
+    </div>
+    <div class="radioForm input-group">
+        <label  class="formLabel col-sm-2 col-form-label">Genero</label>
+        <div class="radioBtn">
+            <input type="radio" name="gender" value="mujer"> Mujer
+            <input type="radio" name="gender" value="hombre"> Hombre
+            <input type="radio" name="gender" value="otro"> No binario
+        </div>
+    </div>
+    <div class="radioForm input-group">
+        <label  class="formLabel col-sm-2 col-form-label">Conocimientos previos</label>
+        <div class="magic">
+            <div class="chexBtn">
+                <input type="checkbox" value="html" > HTML
+                <input type="checkbox" value="css"> CSS
+                <input type="checkbox" value="javascript"> JS
+            </div>
+            <div class="chexBtn">
+                <input type="checkbox" value="python"> Python
+                <input type="checkbox" value="bd" > Base de datos
+            </div>
+        </div>
+    </div>
+    <div class="radioForm input-group">
+        <label  class="formLabel col-sm-2 col-form-label">Estudios</label>
+        <div class="chexBtn2">
+            <select name="estudios" id="estudios">
+                <option value="primaria" > --Seleccione una opción--</option>
+                <option value="primaria" > Primaria</option>
+                <option value="secundaria"> Secundaria</option>
+                <option value="terciario"> Terciario</option>
+                <option value="universitario"> Universitario</option>
+                <option value="otro" > Otro</option>
+            </select>
+        </div>
+    </div>
+    <div class="radioForm input-group">
+        <label  for="comentarios" class="formLabel col-sm-2 col-form-label">Comentarios</label>
+        <div class="chexBtn2">
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+        </div>
+    </div>
+    <input type="submit" value="enviar">
+</form>
+
+<footer class="footer ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="flex-center">
+                    <a class="navText" href="https://www.facebook.com/CasaDelCamba" target="_blank" >
+                        <i class="textColor iconSize fab fa-facebook-f mr-md-5 fa-2x"> </i>
+                    </a>
+                    <a class="tw-ic" href="https://twitter.com/la_casadelcamba" target="_blank" >
+                        <i class="textColor iconSize fab fa-twitter fa-lg  mr-md-5  fa-2x"> </i>
+                    </a>
+                    <a class="gplus-ic" href="https://www.casadelcamba.com/" target="_blank" >
+                        <i class="textColor iconSize fab fa-google-plus-g fa-lg  mr-md-5  fa-2x"> </i>
+                    </a>
+                    <a class="li-ic" href="https://www.linkedin.com/company/la-casa-del-camba/about/" target="_blank" >
+                        <i class="textColor iconSize fab fa-linkedin-in fa-lg  mr-md-5  fa-2x"> </i>
+                    </a>
+                    <a class="ins-ic" href="https://www.instagram.com/lacasadelcamba/" target="_blank" >
+                        <i class="textColor iconSize fab fa-instagram fa-lg  mr-md-5 fa-2x"> </i>
+                    </a>
+                    <a class="pin-ic" href="https://ar.pinterest.com/search/pins/?rs=ac&len=2&q=majadito%20boliviano&eq=majadito&etslf=6358&term_meta[]=majadito%7Cautocomplete%7C0&term_meta[]=boliviano%7Cautocomplete%7C0" target="_blank" >
+                        <i class="textColor iconSize fab fa-pinterest fa-lg  fa-2x"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="textColor textCorpSize footer-copyright text-center my-2">© 2020 Copyright:
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>

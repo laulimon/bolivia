@@ -1,0 +1,146 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous"
+  >
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../public/style/styles.css" media="screen"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=PT+Sans+Narrow&display=swap"
+        rel="stylesheet">
+
+  <title>Feedback Sent</title>
+</head>
+<body>
+<nav id="navColor" class="navbar  fixed-top navbar-expand-lg navbar-light ">
+  <div class="general container">
+    <a class="navbar-brand" href="../index.html">
+      <img class="logo hvr-wobble-horizontal" src="../public/imagen/icon1.png" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item linkNavbar">
+          <a class="hvr-float-shadow navText nav-link" href="./aboutMe.html">Nosotros</a>
+        </li>
+        <li class="nav-item linkNavbar">
+          <a class="hvr-float-shadow navText nav-link" href="./contact.html">Contacto</a>
+        </li>
+        <li class="nav-item linkNavbar">
+          <a class="hvr-float-shadow navText nav-link" href="./branch.html">Sucursales</a>
+        </li>
+        <li class="nav-item linkNavbar">
+          <a class="hvr-float-shadow navText nav-link" href="./register.html">Registro</a>
+        </li>
+        <li class="nav-item linkNavbar">
+          <a class="hvr-float-shadow navText nav-link" href="./ourCustomers.html">Clientes felices</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<p align=center>&nbsp;</p>
+<h1 align=center><font size="+1">The following information has been sent as your
+  feedback:</font></h1>
+<table border="1" align=center width="226">
+  <tr>
+    <th align="center">Form Field</th>
+    <th align="center">Field Value</th>
+  </tr>
+
+  <footer class="footer ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="flex-center">
+            <a class="navText" href="https://www.facebook.com/CasaDelCamba" target="_blank" >
+              <i class="textColor iconSize fab fa-facebook-f mr-md-5 fa-2x"> </i>
+            </a>
+            <a class="tw-ic" href="https://twitter.com/la_casadelcamba" target="_blank" >
+              <i class="textColor iconSize fab fa-twitter fa-lg  mr-md-5  fa-2x"> </i>
+            </a>
+            <a class="gplus-ic" href="https://www.casadelcamba.com/" target="_blank" >
+              <i class="textColor iconSize fab fa-google-plus-g fa-lg  mr-md-5  fa-2x"> </i>
+            </a>
+            <a class="li-ic" href="https://www.linkedin.com/company/la-casa-del-camba/about/" target="_blank" >
+              <i class="textColor iconSize fab fa-linkedin-in fa-lg  mr-md-5  fa-2x"> </i>
+            </a>
+            <a class="ins-ic" href="https://www.instagram.com/lacasadelcamba/" target="_blank" >
+              <i class="textColor iconSize fab fa-instagram fa-lg  mr-md-5 fa-2x"> </i>
+            </a>
+            <a class="pin-ic" href="https://ar.pinterest.com/search/pins/?rs=ac&len=2&q=majadito%20boliviano&eq=majadito&etslf=6358&term_meta[]=majadito%7Cautocomplete%7C0&term_meta[]=boliviano%7Cautocomplete%7C0" target="_blank" >
+              <i class="textColor iconSize fab fa-pinterest fa-lg  fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="textColor textCorpSize footer-copyright text-center my-2">© 2020 Copyright:
+    </div>
+  </footer>
+
+  <script language="javascript">
+    var args = location.search.substr(1).split('&');
+    for (var i = 0; i < args.length; ++i) {
+      var parts = args[i].split('=');
+      if (parts != null) {
+        var field = parts[0];
+        var value = parts[1];
+        if (value == null) {
+          value = "null"
+        } else {
+          value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+        }
+
+        document.writeln('<tr><td align="center">' + field + '</td>');
+        document.writeln('<td align="center">' + value + '</td></tr>');
+      }
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+          crossorigin="anonymous"></script>
+  <noscript>
+    <tr>
+      <td>
+        <p>You need to turn on Javascript in your browser.</p>
+
+        <p>In Microsoft Internet Explorer 4 or greater:</p>
+        <ul>
+          <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+          <li>Click on the "Security" tab.</li>
+          <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+            and then click on "Settings...".)
+          </li>
+          <li>Under "Active scripting" make sure "Enable" is selected.</li>
+        </ul>
+
+        <p>In Netscape version 4 or greater:</p>
+        <ul>
+          <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+          <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+          <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+          <li>Click the <b>OK</b> button.</li>
+        </ul>
+
+      </td>
+    </tr>
+  </noscript>
+
+</table>
+</body>
+</html>
